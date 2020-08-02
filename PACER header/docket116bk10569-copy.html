@@ -1,0 +1,146 @@
+
+<html><head><title>Internal CM/ECF Live Database</title>
+<link rel="stylesheet" type="text/css" href="/css/default.css"><script type="text/javascript" src="/lib/core.js"></script><script type="text/javascript">if (top!=self) {top.location.replace(location.href);}</script></head><body BGCOLOR=FFFFF0 TEXT=000000 onLoad='SetFocus()'><div class="noprint"><img id="cmecfLogo" class="cmecfLogo" src="/graphics/cmecf-logo.gif" alt="CM/ECF" title="" /><img src="/graphics/menubar-help.gif" alt="?" title="" class="helpImage" id="helpImage" onClick="CMECF.MainMenu.showHelpPage(''); return false" onMouseOver="CMECF.MainMenu.helpImageOn()" onMouseOut="CMECF.MainMenu.helpImageOff()" /><div id="topmenu" class="yuimenubar"><div class="bd"><ul class="first-of-type"><li class="yuimenubaritem" style="width:9%"><a class="yuimenubaritemlabel" href='/cgi-bin/iquery.pl'>Q</u>uery</a></li><li class="yuimenubaritem" style="width:11%"><a class="yuimenubaritemlabel" href='/cgi-bin/DisplayMenu.pl?Reports&id=-1'>R</u>eports</a></li><li class="yuimenubaritem" style="width:11%"><a class="yuimenubaritemlabel" href='/cgi-bin/DisplayMenu.pl?Utilities&id=-1'>U</u>tilities</a></li><li class="yuimenubaritem" style="width:10%"><a class="yuimenubaritemlabel" href='/cgi-bin/login.pl?logout'>Logout</a></li></ul></div></div></div><script type="text/javascript">if (navigator.appVersion.indexOf("MSIE")==-1){window.setTimeout( function(){ CMECF.MainMenu.renderSimpleMenu(); }, 0);}else{CMECF.util.Event.addListener(window, "load", CMECF.MainMenu.renderSimpleMenu);}</script><div id="cmecfMainContent"><input type="hidden" id="cmecfMainContentScroll" value="0"><SCRIPT LANGUAGE="JavaScript">
+var IsForm = false;
+var FirstField;
+function SetFocus() {
+if(IsForm) {
+if(FirstField) {
+var ind = FirstField.indexOf('document.',0);
+if(ind == 0)
+{
+eval(FirstField);
+}
+else
+{
+var Code = "document.forms[0]."+FirstField+".focus();";
+eval(Code);
+}
+} else {
+var Cnt = 0;
+while(document.forms[0].elements[Cnt] != null) {
+if(document.forms[0].elements[Cnt].type != "hidden") {
+document.forms[0].elements[Cnt].focus();
+break;
+}
+Cnt += 1;
+}
+}
+}
+return(true);
+}
+</SCRIPT>
+<script type='text/JavaScript'>
+document.cookie="PDFHeaderReferer=828552203288335; path=/";
+</script>
+<script type="text/javascript" src="/lib/widgits.js"></script>
+<script>
+var debtorPanel = null;
+
+function create_panel(clid, message) {
+if (!debtorPanel) {
+debtorPanel = new CMECF.widget.Panel('debtorPanel', {
+close:true,
+draggable:false,
+context:[clid, 'tl', 'br'],
+width: "250" + "px",
+height: "110" + "px",
+constraintoviewport:true
+});
+debtorPanel.setHeader("Barred Debtor Information");
+debtorPanel.setBody(message);
+debtorPanel.body.style.height = "8em";
+debtorPanel.render(document.body);
+} else {
+debtorPanel.show();
+}
+}
+
+function close_panel() {
+if (debtorPanel) {
+debtorPanel.destroy();
+debtorPanel = null;
+}
+}
+</script>
+<TABLE width="100%" align=right BORDER=0 CELLSPACING=5><TR><TD ALIGN=right><h2> <FONT SIZE="3">DISMISSED, CLOSED</FONT></h2></TD></TR></TABLE><BR><BR><BR><CENTER><B><FONT SIZE="+1">U.S. Bankruptcy Court<BR>District of Delaware (Delaware)<BR>Bankruptcy Petition #: 16-10569-KG</FONT></B></CENTER><TABLE width="100%" BORDER=0 CELLSPACING=1><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><BR><I>Assigned to:</I> Kevin Gross<BR>Chapter 11<BR>Involuntary<div class="noprint"><a href='/cgi-bin/SearchClaims.pl?caseid=162438;sc'>Claims Register</a></div><BR><BR><BR><I>Debtor disposition:</I>&nbsp;&nbsp;Dismissed for Other Reason </FONT></TD>
+<TD VALIGN=top WIDTH="50%" ALIGN=right><FONT SIZE="+0"><TABLE border=0 cellspacing=0 cellpadding=0 align=center><TR><td align="right" valign="top"><I>Date filed:</I></td><td align="left" valign="top">&nbsp;&nbsp;03/04/2016</td></TR><TR><td align="right" valign="top"><I>Date terminated:</I></td><td align="left" valign="top">&nbsp;&nbsp;05/24/2016</td></TR><TR><td align="right" valign="top"><I>Debtor dismissed:</I></td><td align="left" valign="top">&nbsp;&nbsp;05/09/2016</td></TR></TABLE> </FONT></TD>
+</TR>
+</TABLE><BR><FONT SIZE="5"><B></B>
+</FONT><TABLE width="100%" BORDER=0 CELLSPACING=1><TR><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><I><B>Petitioning Creditor</B></I><BR><B>Zeitgeist Capital, LLC</B>
+<BR>Michael Tregoning
+<BR>2711 N. Haskell Avenue
+<BR>Suite 2800
+<BR>Dallas, TX 75204<BR><BR> </FONT></TD>
+<TD VALIGN=top ALIGN=right><FONT SIZE="+0">represented by </FONT></TD>
+<TD valign="top" WIDTH="40%">
+<font size="+0"><B>Michael J. Collins</B>
+<BR>Brewer Attorneys & Counselors
+<BR>1717 Main Street
+<BR>Suite 5900
+<BR>Dallas, TX 75201
+<BR>214-653-4000
+<BR>Email:&nbsp;<a href='mailto:mjc@Brewerattorneys.com'>mjc@Brewerattorneys.com</a><BR><BR><B>Brian A. Sullivan</B>
+<BR>Werb & Sullivan
+<BR>300 Delaware Avenue
+<BR>13th Floor
+<BR>P.O. Box 25046
+<BR>Wilmington, DE 19899<BR>usa
+<BR>302-652-1100
+<BR>Fax : 302-652-1111
+<BR>Email:&nbsp;<a href='mailto:bsullivan@werbsullivan.com'>bsullivan@werbsullivan.com</a><BR><BR></font></TD><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><I><B>Petitioning Creditor</B></I><BR><B>Gryphon Resources, Inc.</B>
+<BR>Michael Tregoning
+<BR>2711 N Haskell Avenue
+<BR>Suite 2800
+<BR>Dallas, TX 75204<BR><BR> </FONT></TD>
+<TD VALIGN=top ALIGN=right><FONT SIZE="+0">represented by </FONT></TD>
+<TD valign="top" WIDTH="40%">
+<font size="+0"><B>Michael J. Collins</B>
+<BR>(See above for address)<BR><BR><B>Brian A. Sullivan</B>
+<BR>(See above for address)<BR><BR></font></TD><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><I><B>Petitioning Creditor</B></I><BR><B>Cobalt, LLC</B>
+<BR>Christopher Martin
+<BR>2711 N. Haskell Avenue
+<BR>Suite 2800
+<BR>Dallas, TX 75204<BR><BR> </FONT></TD>
+<TD VALIGN=top ALIGN=right><FONT SIZE="+0">represented by </FONT></TD>
+<TD valign="top" WIDTH="40%">
+<font size="+0"><B>Michael J. Collins</B>
+<BR>(See above for address)<BR><BR><B>Brian A. Sullivan</B>
+<BR>(See above for address)<BR><BR></font></TD><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><I><B>Alleged Debtor</B></I><BR><B>Georgia Proton Treatment Holdings, LLC</B>
+<BR>4747 Executive Drive
+<BR>Suite 590
+<BR>San Diego, CA 92121
+<BR>SAN DIEGO-CA
+<BR>Tax ID / EIN: 00-0000000<BR><BR> </FONT></TD>
+<TD VALIGN=top ALIGN=right><FONT SIZE="+0">represented by </FONT></TD>
+<TD valign="top" WIDTH="40%">
+<font size="+0"><B>Georgia Proton Treatment Holdings, LLC</B>
+<BR>PRO SE<BR>
+<BR><B></B><BR><BR></font></TD></TR><TR> <TD VALIGN=top WIDTH="50%"><FONT SIZE="+0"><I><B>U.S. Trustee</B></I><BR><B>U.S. Trustee</B>
+<BR>Office of United States Trustee
+<BR>J. Caleb Boggs Federal Building
+<BR>844 King Street, Suite 2207
+<BR>Lockbox 35
+<BR>Wilmington, DE 19899-0035
+<BR>302-573-6491 </FONT></TD>
+<TD VALIGN=top WIDTH="20%" ALIGN=right><FONT SIZE="+0">&nbsp; </FONT></TD>
+<TD VALIGN=top WIDTH="40%"><FONT SIZE="+0">&nbsp; </FONT></TD>
+</TR></TABLE><BR><TABLE BORDER=1 CELLPADDING=10 CELLSPACING=0><TR><TH width='94' nowrap>Filing Date</TH>
+<TH colspan=2 align='center'>#</TH><TH align=center>Docket Text</TH></TR>
+<TR><TD width="94" nowrap valign=bottom>03/04/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015884114' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015884114"'>1</a> <br><nobr>(4&nbsp;pgs)</nobr></nobr></TD><TD valign=bottom> Chapter 11 Involuntary Petition. Fee Amount &#036;1717. Re: Georgia Proton Treatment Holdings, LLC Filed by Petitioning Creditor(s): Zeitgeist Capital, LLC (attorney Brian A. Sullivan), Gryphon Resources, Inc. (attorney Brian A. Sullivan), Cobalt, LLC (attorney Brian A. Sullivan). (Sullivan, Brian) (Entered: 03/04/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/04/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'>2</nobr></TD><TD valign=bottom> Receipt of filing fee for Involuntary Petition (Chapter 11)(16-10569) [misc,invol11a] (1717.00). Receipt Number 7923551, amount &#036;1717.00. (U.S. Treasury) (Entered: 03/04/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/07/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'>&nbsp;</nobr></TD><TD valign=bottom> Judge Kevin Gross added to case (BA) (Entered: 03/07/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/07/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015891373' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015891373"'>3</a> <br><nobr>(1&nbsp;pg)</nobr></nobr></TD><TD valign=bottom> Involuntary Summons Issued by the Court to Petitioning Creditor for Service on Alleged Debtor. Summons and Petition Must Be Served by Petitioning Creditor by 3/21/2016. Petitioning Creditor Must File a Certificate of Service with the Court within 5 days of serving the Involuntary Summons and Petition upon Alleged Debtor. (COH) (Entered: 03/09/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/10/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015893736' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015893736"'>4</a> <br><nobr>(2&nbsp;pgs)</nobr></nobr></TD><TD valign=bottom> Summons Service Executed on Georgia Proton Treatment Holdings, LLC on <i>March 7, 2016</i> Filed by Cobalt, LLC, Gryphon Resources, Inc., Zeitgeist Capital, LLC. Responses due by 3/31/2016. (Sullivan, Brian) (Entered: 03/10/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/24/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015930463' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015930463"'>5</a> <br><nobr>(8&nbsp;pgs; 2&nbsp;docs)</nobr></nobr></TD><TD valign=bottom> Certification of Counsel <i>Regarding Stipulation To Extend Time to Respond to Petition</i> (related document(s)<a href='https://ecf.deb.uscourts.gov/doc1/042015893736'>4</a>) Filed by Cobalt, LLC, Gryphon Resources, Inc., Zeitgeist Capital, LLC. (Attachments: # <a href='https://ecf.deb.uscourts.gov/doc1/042115930464'>1</a> Exhibit A Proposed Order with Attached Stipulation) (Sullivan, Brian) (Entered: 03/24/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>03/29/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015939591' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015939591"'>6</a> <br><nobr>(5&nbsp;pgs; 2&nbsp;docs)</nobr></nobr></TD><TD valign=bottom> Order Approving Stipulation to Extend Time to Respond to Petition (related document(s)<a href='https://ecf.deb.uscourts.gov/doc1/042015884114'>1</a>, <a href='https://ecf.deb.uscourts.gov/doc1/042015891373'>3</a>, <a href='https://ecf.deb.uscourts.gov/doc1/042015893736'>4</a>). Signed on 3/29/2016. (Attachments: # <a href='https://ecf.deb.uscourts.gov/doc1/042115939592'>1</a> Exhibit 1) (SJS) (Entered: 03/29/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>04/15/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042015983369' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042015983369"'>7</a> <br><nobr>(11&nbsp;pgs; 4&nbsp;docs)</nobr></nobr></TD><TD valign=bottom> Joint Motion of Petitioning Creditors, Alleged Debtor and Senior Secured Creditor to Dismiss Involuntary Petition Pursuant to U.S. Bankruptcy Code Section 303(j)</i> Filed by Cobalt, LLC, Gryphon Resources, Inc., Zeitgeist Capital, LLC. Hearing scheduled for 5/12/2016 at 11:00 AM at US Bankruptcy Court, 824 Market St., 6th Fl., Courtroom #3, Wilmington, Delaware. Objections due by 5/5/2016. (Attachments: # <a href='https://ecf.deb.uscourts.gov/doc1/042115983370'>1</a> Notice Notice of Motion # <a href='https://ecf.deb.uscourts.gov/doc1/042115983371'>2</a> Exhibit A Proposed Order # <a href='https://ecf.deb.uscourts.gov/doc1/042115983372'>3</a> Certificate of Service) (Sullivan, Brian) Modified on 4/18/2016 (SH). (Entered: 04/15/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>05/06/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042016036268' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042016036268"'>8</a> <br><nobr>(4&nbsp;pgs; 3&nbsp;docs)</nobr></nobr></TD><TD valign=bottom> Certificate of No Objection <i>Regarding Motion of Petitioning Creditors, Alleged Debtor and Senior Secured Creditor to Dismiss Involuntary Petition Pursuant to U.S. Bankruptcy Code Section 303(j)</i> (related document(s)<a href='https://ecf.deb.uscourts.gov/doc1/042015983369'>7</a>) Filed by Cobalt, LLC, Gryphon Resources, Inc., Zeitgeist Capital, LLC. (Attachments: # <a href='https://ecf.deb.uscourts.gov/doc1/042116036269'>1</a> Proposed Form of Order # <a href='https://ecf.deb.uscourts.gov/doc1/042116036270'>2</a> Certificate of Service) (Sullivan, Brian) (Entered: 05/06/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>05/09/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042016038489' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042016038489"'>9</a> <br><nobr>(1&nbsp;pg)</nobr></nobr></TD><TD valign=bottom> Order Approving Motion of Petitioning Creditors, Alleged Debtor and Senior Secured Creditor to Dismiss Involuntary Petition (Related Doc # <a href='https://ecf.deb.uscourts.gov/doc1/042015983369'>7</a>) Order Signed on 5/9/2016. (SH) (Entered: 05/09/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>05/10/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'><a href='/doc1/042016040731' onContextMenu='this.href="https://ecf.deb.uscourts.gov/doc1/042016040731"'>10</a> <br><nobr>(2&nbsp;pgs)</nobr></nobr></TD><TD valign=bottom> HEARING CANCELLED/RESCHEDULED. Notice of Agenda of Matters Scheduled for Hearing. (related document(s)<a href='https://ecf.deb.uscourts.gov/doc1/042015983369'>7</a>) Filed by Cobalt, LLC, Gryphon Resources, Inc., Zeitgeist Capital, LLC. Hearing scheduled for 5/12/2016 at 11:00 AM at US Bankruptcy Court, 824 Market St., 6th Fl., Courtroom &#035;3, Wilmington, Delaware. (Sullivan, Brian) (Entered: 05/10/2016)</TD></TR>
+<TR><TD width="94" nowrap valign=bottom>05/24/2016</TD><TD width=74 valign=top align=right style='border-right:0;padding-right:1px;padding-left:2px;white-space:nowrap'><nobr> &nbsp;</TD><TD width=30 valign=top align=left style='border-left:0;padding-left:1px'>&nbsp;</nobr></TD><TD valign=bottom> Bankruptcy Case Closed (SH) (Entered: 05/24/2016)</TD></TR>
+</TABLE><BR><BR><BR><BR>
+<script type='text/javascript'>
+document.cookie = 'RECENT_CASES=' + "162438^162013^161679^161227^160549^160508^160492^159999^159766^159354;";
+</script>
+<HR><CENTER><TABLE BORDER=1 BGCOLOR=white width="400"><TR><TH COLSPAN=4><FONT SIZE=+1 COLOR=DARKRED>PACER Service Center </FONT></TH></TR><TR><TH COLSPAN=4><FONT COLOR=DARKBLUE>Transaction Receipt </FONT></TH></TR><TR></TR><TR></TR><TR><TD COLSPAN=4 ALIGN=CENTER><FONT SIZE=-1 COLOR=DARKBLUE>06/20/2020 12:52:59</FONT></TD></TR><TR><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> PACER Login: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> samuelantill:6398153:0 </FONT></TH></TD><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Client Code: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> </FONT></TD></TR><TR><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Description: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Docket Report </FONT></TD><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Search Criteria: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> 16-10569-KG Fil or Ent: filed From: 1/1/1978 To: 5/1/2021 Doc From: 0 Doc To: 99999999 Term: included Headers: included Format: html Page counts for documents: included </FONT></TD></TR><TR><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Billable Pages: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> 2 </FONT></TD><TH ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> Cost: </FONT></TH><TD ALIGN=LEFT><FONT SIZE=-1 COLOR=DARKBLUE> 0.20 </FONT></TD></TR><TR></TR><TR></TR></TABLE></CENTER></HR><BR></BR></div></body></html>
